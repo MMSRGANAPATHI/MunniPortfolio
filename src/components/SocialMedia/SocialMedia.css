@@ -1,0 +1,44 @@
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    margin: 30px;
+    line-height: 1.8;
+
+    
+}
+
+.icon-link{
+    font-size: 35px;
+    text-decoration: none;
+    color: crimson;
+    animation: slideInIcons 3s forwards;
+}
+
+
+.vertical-line {
+    margin-top: 7vh;
+    border-left: 4px solid #ccc; /* Adjust thickness and color as needed */
+    height: 250px; /* Adjust height of the line */
+    margin-left: -3vh;
+    left: -100%;
+    animation: slideInLine 1.5s forwards;
+}
+  @keyframes slideInLine {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInIcons {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
