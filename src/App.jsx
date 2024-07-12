@@ -1,6 +1,11 @@
 // App.js
 import React from "react";
 import Name from "./components/Name/Name";
+import Projects from "./components/Projectsfolder/Projects";
+import Contact from "./components/Contact/Contact";
+import Education from "./components/Education/Education";
+import ResearchWork from "./components/ResearchWork/ResearchWork";
+import Skills from "./components/Skills/Skills";
 import "./App.css";
 
 const App = () => {
@@ -12,16 +17,29 @@ const App = () => {
         </div>
       </div>
       <div className="slide">
-        <div className="projects">hii</div>
+        <div className="projects">
+          <Education />
+        </div>
       </div>
       <div className="slide">
-        <div className="projects">Slide 3 content</div>
+        <div className="projects">
+          <Skills />
+        </div>
       </div>
       <div className="slide">
-        <div className="projects">Slide 4 content</div>
+        <div className="projects">
+          <Projects />
+        </div>
       </div>
       <div className="slide">
-        <div className="projects">Slide 5 content</div>
+        <div className="projects">
+          <ResearchWork />
+        </div>
+      </div>
+      <div className="slide">
+        <div className="projects">
+          <Contact />
+        </div>
       </div>
     </div>
   );

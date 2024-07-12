@@ -1,48 +1,88 @@
 body {
-    background: #000405;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #000405;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+}
+
+.ptag {
+  font-size: 4vw;
+  line-height: 0.5;
+}
+
+.fancy1, .fancy {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+.fancy1 {
+  font-size: 84px;
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+.fancy {
+  animation: fadeInColorChange 2s ease-in-out forwards;
+}
+
+p {
+  margin: 10px;
+  font-style: italic;
+  animation: fadeInSlideUp 1.2s ease-in-out forwards;
+}
+
+.name-container {
+  animation: fadeInOpacity 1.5s ease-in forwards;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInColorChange {
+  0% {
+    opacity: 0;
+    color: #000;
+  }
+  100% {
+    opacity: 1;
     color: #fff;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
   }
-  
-  .ptag {
-    font-size: 4vw;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-  }
-  
-  .fancy {
-    @supports (background-clip: text) or (-webkit-background-clip: text) {
-      background-image: 
-        url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
-      background-size: 110% auto;
-      background-position: center;
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-  }
+}
 
-  .name-container {
-    animation: fadeInAnimation 1.5s ease-in;
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  @keyframes fadeInAnimation {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
 
-
-  
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

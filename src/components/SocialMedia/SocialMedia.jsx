@@ -5,7 +5,7 @@ const SocialMedia = () => {
     <div className="container" style={{ display: "flex" }}>
       <div className="contact-icons">
         <a
-          href="https://www.linkedin.com/your-profile-url"
+          href="https://www.linkedin.com/in/marnala-murali-sriram-ganapathi-3668a9250"
           target="_blank"
           rel="noopener noreferrer"
           className="icon-link"
@@ -13,7 +13,7 @@ const SocialMedia = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/MMSRGANAPATHI"
           target="_blank"
           rel="noopener noreferrer"
           className="icon-link"

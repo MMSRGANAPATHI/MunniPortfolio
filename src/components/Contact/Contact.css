@@ -1,0 +1,59 @@
+
+
+
+.title {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: 
+        url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  #name, #email, #message, #submit {
+    width: 90vh;
+    height: 8vh;
+    border-style: none;
+    background: skyblue;
+    margin-bottom: 5vh;
+  }
+  
+  #submit {
+    font-size: 20px;
+    background-color: rgb(239, 162, 18);
+  }
+  
+  ::placeholder {
+    color: rgb(68, 54, 18);
+    font-size: 20px;
+  }
+  
+  .contact-container {
+    opacity: 0;
+    animation: none;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
